@@ -45,7 +45,7 @@ def main():
     amazon_url = st.text_input("Enter the Amazon product URL:")
 
     # Button to trigger scraping
-    if st.button("Analyze ESG Score"):
+    if st.button("Analyze Sustainability Score"):
         if amazon_url and amazon_url!='':
             # Extract text parts from Amazon URL
             list_items = scrape_amazon(amazon_url)
@@ -89,7 +89,7 @@ analysis this :
             #insert image
             #st.image(get_image, caption='Product Image', width=200) # Resizes the image to 200 pixels wide            # # Display the ESG score and circular wheel graph
             #st.json(response_dict)
-            st.header('ESG Score: ')
+            st.header('Sustainability Score: ')
             st.write(response_dict['esg_score'])
 
             st.header('Pros: ')
