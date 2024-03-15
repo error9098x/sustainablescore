@@ -29,7 +29,7 @@ def scrape_amazon_image(url):
     # For each 'span' tag, find the 'img' tag.
     for span in span_list_items:
         img = span.find('img')
-        st.warning(img)
+        #st.warning(img)
         if img:
             alt_text = img.get('alt')
             if alt_text:
