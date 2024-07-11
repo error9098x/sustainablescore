@@ -59,7 +59,8 @@ def main():
             # Generate body for API request
             prompt = """
                 only reponse in json format like {esg_score : 'value(0-100)' } sample:
-                 {
+                EXAMPLE FOR A PLASTIC BOTTLE 
+                  {
     "esg_score": "60",
     "pros": {
         "1": "BPA-Free heavy-duty clear plastic",
@@ -75,7 +76,7 @@ def main():
         "3": "Bulk purchase may not be suitable for small gatherings",
         "4": "Plastic waste if not properly recycled"
     }
-}
+} its an example , now you are trained to find sustainable and non sustainble product
  that is the sustainbility score of this content :
 analysis this : 
 """ + concatenated_text
